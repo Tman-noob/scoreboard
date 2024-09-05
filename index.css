@@ -48,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    touch-action: manipulation;
 }
 
 .buttons h2 {
