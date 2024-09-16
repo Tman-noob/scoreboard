@@ -14,6 +14,8 @@ body {
 }
 
 .body {
+    position: relative;
+    margin: auto;
     max-width: 1000px;
     text-align: center;
 }
@@ -30,11 +32,13 @@ h2 {
 
 #left-btn,
 #right-btn {
+    text-align: center;
     width: 150px;
     height: 150px;
+    padding: 5px;
     margin-bottom: 10px;
     font-family: Cursed Timer ULiL;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 500;
     color: rgb(207, 6, 6);
     background-color: black;
@@ -73,15 +77,6 @@ h2 {
 	transition: .1s;
 }
 
-/* @media (action: action) {
-    #left-btn,
-    #right-btn:action {
-        transform: scale(1.1);
-	    transition: .1s;
-
-    }
-} */
-
 .reset {
     text-align: center;
     margin-top: 10px;
@@ -91,6 +86,7 @@ h2 {
     #left-btn,
     #right-btn {
         width: 200px;
+        font-size: 50px;
     }
     #right-btn-rmv,
     #left-btn-rmv {
@@ -106,63 +102,30 @@ h2 {
     #left-btn,
     #right-btn {
         width: 300px;
-    }
-    #right-btn-rmv,
-    #left-btn-rmv {
-        width: 150px;
-    }
-
-    #reset-btn {
-        width: 150px;
+        font-size: 60px;
     }
 }
 
-@media (min-width: 934px) {
+@media (min-width: 934px) and (min-width: 935px) {
     #left-btn,
     #right-btn {
         width: 400px;
         height: 300px;
     }
-    #right-btn-rmv,
-    #left-btn-rmv {
-        width: 150px;
-    }
-
-    #reset-btn {
-        width: 150px;
-    }
 }
 
-@media (min-width: 600px) and (orientation:landscape) {
+@media (min-height: 400px) and (orientation: landscape) {
     #left-btn,
     #right-btn {
         width: 300px;
         height: 150px;
     }
-    #right-btn-rmv,
-    #left-btn-rmv {
-        width: 150px;
-    }
-
-    #reset-btn {
-        width: 150px;
-        margin-top: -10px;
-    }
 }
 
-@media (min-width: 896px) and (orientation:landscape) {
+@media (min-width: 748px) and (orientation: landscape) {
     #left-btn,
     #right-btn {
         width: 400px;
         height: 200px;
-    }
-    #right-btn-rmv,
-    #left-btn-rmv {
-        width: 150px;
-    }
-
-    #reset-btn {
-        width: 150px;
-        margin-top: -10px;
     }
 }
