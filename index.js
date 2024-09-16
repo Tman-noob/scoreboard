@@ -12,8 +12,10 @@ function left() {
 }
 
 function leftRmv() {
-    leftCount -= 1;
-    leftEl.textContent = leftCount;
+    if (leftCount > 0) {
+        leftCount -= 1;
+        leftEl.textContent = leftCount;
+    }
 }
 
 function right() {
@@ -22,8 +24,10 @@ function right() {
 }
 
 function rightRmv() {
-    rightCount -= 1;
-    rightEl.textContent = rightCount;
+    if (rightCount > 0) {
+        rightCount -= 1;
+        rightEl.textContent = rightCount;
+    }
 }
 
 function reset() {
